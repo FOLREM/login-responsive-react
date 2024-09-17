@@ -1,0 +1,8 @@
+.login {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(211, 211, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

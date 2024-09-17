@@ -1,0 +1,60 @@
+.input-field__label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: .2rem;
+  color: rgb(26, 26, 26);
+}
+
+.input-field__input {
+  width: 100%;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: .5rem;
+  outline: none;
+  border: 3px solid transparent;
+}
+.input-field-check{
+  display: flex;
+  grid-column: span 2;
+}
+
+.input-field-check .input-field__label {
+  order: 2;
+}
+
+.formulario__checkbox {
+  margin-right: .5rem;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ec1f06;
+  border-radius: 5px;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.formulario__checkbox::before {
+  content: '';
+  background-color: #ec1f06;
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.formulario__checkbox:checked::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@media screen and (max-width: 650px) {
+  .input-field-check {
+    grid-column: span 1;
+  }
+}

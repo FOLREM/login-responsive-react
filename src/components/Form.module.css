@@ -1,0 +1,132 @@
+.formulario {
+  background-image: url('./../assets/waveForm.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-color: #ffffff60;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 1rem;
+  box-shadow: 0 0 5px 5px #c5c5ec;
+  transition: .3s;
+}
+
+.formulario-short {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  width: 100%;
+}
+
+.formulario__titulo {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 800;
+  color: #1a1a1a;
+  padding: 1rem;
+}
+
+.formulario__social {
+  display: none;
+}
+
+.formulario-short .formulario__social {
+  display: block;
+  grid-column: span 2;
+}
+
+.formulario__social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.formulario__social-media i {
+  border: 1px solid #1a1a1a;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  padding: .5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 24px;
+  transition: .3s;
+}
+
+.formulario__social-media i:hover {
+  border-color: #ec1f06;
+  color: #ec1f06;
+}
+
+.formulario__info {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.formulario__forgot {
+  text-align: end;
+}
+
+.formulario__forgot-link {
+  color: #ec1f06;
+}
+
+.formulario__btn {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.formulario__btn-enviar {
+  height: 3rem;
+  line-height: 3rem;
+  max-width: 10rem;
+  min-width: 7rem;
+  width: 100%;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  transition: .3s;
+}
+
+.formulario__btn-enviar:hover {
+  box-shadow: 0 0 5px 3px #0000007c;
+}
+
+.formulario__text {
+  grid-column: span 2;
+  text-align: center;
+}
+
+.formulario__text a {
+  color: #ec1f06;
+}
+
+
+@media screen and (max-width: 650px) {
+  .formulario {
+    grid-template-columns: 1fr;
+    max-width: 25rem;
+  }
+  .formulario__titulo {
+    grid-column: span 1;
+  }
+  .formulario__btn {
+    grid-column: span 1;
+  }
+  .formulario__text {
+    grid-column: span 1;
+  }
+}
