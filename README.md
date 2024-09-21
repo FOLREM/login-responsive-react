@@ -5,7 +5,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/FOLREM/login-responsive-react)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Description:** Este proyecto incluye formularios para el registro e inicio de sesión de usuarios.
+**Descripción:** Este proyecto incluye formularios para el registro e inicio de sesión de usuarios.
 
 Vista previa :telescope: [Login-react-netlify.app](https://thunderous-froyo-8e41d4.netlify.app/ "https://thunderous-froyo-8e41d4.netlify.app/") :rocket:
 
